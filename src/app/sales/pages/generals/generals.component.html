@@ -1,1 +1,70 @@
-<p>generals works!</p>
+<div class="text-layout">
+  <h3>Pipes Básicos</h3>
+  <p>Pipes incluídos en Angular - Usualmente en el módulo de Common.</p>
+</div>
+
+<div class="card">
+  <div class="flex flex-row flex-wrap card-container blue-container">
+    <div class="flex-1 m-2">
+      <p-card header="uppercase" [subheader]="nameLower">
+        Resultado : {{ nameLower | uppercase }}
+      </p-card>
+    </div>
+    <div class="flex-1 m-2">
+      <p-card header="lowercase" [subheader]="nameUpper">
+        Resultado : {{ nameUpper | lowercase }}
+      </p-card>
+    </div>
+    <div class="flex-1 m-2">
+      <p-card header="titlecase" [subheader]="fullName">
+        Resultado : {{ fullName | titlecase }}
+      </p-card>
+    </div>
+  </div>
+</div>
+
+<div class="text-layout">
+  <h3>Date | Fecha | Pipe</h3>
+  <p>Pipe para mostrar las fechas.</p>
+</div>
+
+<div class="card">
+  <div class="flex flex-row flex-wrap card-container blue-container">
+    <div class="flex-1 m-2">
+      <p-card>
+        <ul>
+          <li>Fecha</li>
+          <li>Fecha | date</li>
+          <li>Fecha | date: "short"</li>
+          <li>Fecha | date: "long"</li>
+          <li>Fecha | date: custom</li>
+        </ul>
+
+        <hr />
+
+        <ul>
+          <li>Fecha | date: "long":"GMT-6"</li>
+          <li>Fecha | date: "long":"":"en"</li>
+        </ul>
+      </p-card>
+    </div>
+    <div class="flex-1 m-2">
+      <p-card>
+        <ul>
+          <li>{{ date }}</li>
+          <li>{{ date | date }}</li>
+          <li>{{ date | date: "short" }}</li>
+          <li>{{ date | date: "long" }}</li>
+          <li>{{ date | date: "yyyy-MM-dd" }}</li>
+        </ul>
+
+        <hr />
+
+        <ul>
+          <li>{{ date | date: "long":"GMT-6" }}</li>
+          <li>{{ date | date: "long":"":"en" }}</li>
+        </ul>
+      </p-card>
+    </div>
+  </div>
+</div>
