@@ -7,8 +7,45 @@
   <div class="flex flex-row flex-wrap card-container blue-container">
     <div class="flex-1 m-2">
       <p-card header="Ventas Netas" subheader="Ventas netas del presente año">
+        <ul>
+          <li>número | number: "parte_entera.parte_decimal"</li>
+          <li>número | number: "1.2-2"</li>
+        </ul>
         <i class="pi pi-dollar"></i>
         {{ netSales | number: "1.2-2" }}
+      </p-card>
+    </div>
+    <div class="flex-1 m-2">
+      <p-card header="Ventas Brutas" subheader="Ventas netas del presente año">
+        <ul>
+          <li>número | currency</li>
+          <li>número | currency:'COP'</li>
+          <li>número | currency:'CAD':'symbol-narrow'</li>
+          <li>número | currency:'CAD':'symbol-narrow':'1.4-4'</li>
+        </ul>
+        <ul>
+          <li>{{ netSales + 2000000 | currency }}</li>
+          <li>{{ netSales + 2000000 | currency: "COP" }}</li>
+          <li>{{ netSales + 2000000 | currency: "CAD":"symbol-narrow" }}</li>
+          <li>
+            {{ netSales + 2000000 | currency: "CAD":"symbol-narrow":"1.4-4" }}
+          </li>
+        </ul>
+      </p-card>
+    </div>
+    <div class="flex-1 m-2">
+      <p-card
+        header="Ganancias porcentual"
+        subheader="Ventas netas del presente año"
+      >
+        <ul>
+          <li>número | percent</li>
+          <li>número | percent:"2.2-2"</li>
+        </ul>
+        <ul>
+          <li>{{ numPercent | percent }}</li>
+          <li>{{ numPercent | percent: "1.2-2" }}</li>
+        </ul>
       </p-card>
     </div>
   </div>
