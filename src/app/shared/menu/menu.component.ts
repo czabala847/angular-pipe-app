@@ -15,12 +15,11 @@ export class MenuComponent implements OnInit {
       {
         label: 'Pipes de Angular',
         icon: 'pi pi-align-left',
-        routerLink: '/',
         items: [
           {
             label: 'Textos y Fechas',
             icon: 'pi pi-align-left',
-            routerLink: '',
+            routerLink: '/',
           },
           {
             label: 'Números',
