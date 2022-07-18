@@ -5,7 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './order.component.html',
 })
 export class OrderComponent implements OnInit {
+  text: string = 'Nosotros';
+  mayus: boolean = true;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleMayus() {
+    this.mayus = !this.mayus;
+  }
 }

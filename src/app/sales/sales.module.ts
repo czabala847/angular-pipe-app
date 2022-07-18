@@ -8,12 +8,15 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { NumbersComponent } from './pages/numbers/numbers.component';
 import { OrderComponent } from './pages/order/order.component';
 
+import { MayusPipe } from './pipes/mayus.pipe';
+
 @NgModule({
   declarations: [
     GeneralsComponent,
     NoCommonsComponent,
     NumbersComponent,
     OrderComponent,
+    MayusPipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [

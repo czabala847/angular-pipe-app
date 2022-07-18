@@ -1,1 +1,12 @@
-<p>order works!</p>
+<div class="text-layout">
+  <h1>Pipes personalizados</h1>
+  <p>Pipes creados por {{ text | mayus: mayus }}</p>
+
+  <button
+    pButton
+    type="button"
+    label="Toggle Mayúsculas"
+    class="p-button-success"
+    (click)="toggleMayus()"
+  ></button>
+</div>
