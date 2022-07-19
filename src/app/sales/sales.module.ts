@@ -9,6 +9,8 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { OrderComponent } from './pages/order/order.component';
 
 import { MayusPipe } from './pipes/mayus.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { MayusPipe } from './pipes/mayus.pipe';
     NumbersComponent,
     OrderComponent,
     MayusPipe,
+    FlyPipe,
+    OrderPipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
